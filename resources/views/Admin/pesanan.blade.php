@@ -18,7 +18,35 @@
 
 
     <div class="status">
-    {{-- <h2 style="margin-top: 10vh; font-size:2vw; color:#7969E8;">Pesanan</h2> --}}
+    {{-- <h2 style="margin-top: 10vh; font-size:2vw; color:hsl(248, 73%, 66%);">Pesanan</h2> --}}
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        var waitConfirmDiv = document.querySelector(".waitConfirm");
+
+        if (waitConfirmDiv.querySelector("td") == null) {
+            waitConfirmDiv.style.display = "none";
+        }
+
+        var waitPaymentDiv = document.querySelector(".waitPayment");
+
+        if (waitPaymentDiv.querySelector("td") == null) {
+            waitPaymentDiv.style.display = "none";
+        }
+
+        var paidDiv = document.querySelector(".paid");
+
+        if (paidDiv.querySelector("td") == null) {
+            paidDiv.style.display = "none";
+        }
+
+        var finishDiv = document.querySelector(".finish");
+
+        if (finishDiv.querySelector("td") == null) {
+            finishDiv.style.display = "none";
+            finishDiv.innerHTML ='<h3>Tidak Ada Data</h3>'
+        }
+    });
+    </script>
         <div class="waitConfirm">
             <h3 style="margin-top: 8vh; color:#7969E8;">Status - Menunggu Konfirmasi</h3>
             <table style="width: 95%;">
@@ -52,9 +80,9 @@
                         </tr>
                         @elseif((!$order->konfirmasi & !$order->batal) == null)
                         @csrf
-                        <tr>
-                            <td rowspan="8" style="text-align: center">Tidak Ada Data</td>
-                        </tr>
+                        {{-- <tr>
+                            <td rowspan="8" style="text-align: center;">Tidak Ada Data</td>
+                        </tr> --}}
                     @endif
                     
                 @endforeach

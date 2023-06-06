@@ -1,13 +1,16 @@
 table,
 th {
-    border: 2px solid #7969e8;
+    border: 2px solid #5498c8 !important;
     border-collapse: collapse;
     padding: 5px 10px;
     text-align: center !important;
 }
+th {
+    background-color: #99d5ff;
+}
 
 td {
-    border-right: 2px solid #8b7fdf;
+    border-right: 2px solid #5498c8 !important;
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center !important;
