@@ -1,25 +1,27 @@
-h2{ 
-    font-size:30px; color:#7969E8; margin-bottom: 5vh;
+h2 {
+    font-size: 30px;
+    color: #5498c8;
+    margin-bottom: 5vh;
     font-weight: bolder !important;
 }
 
-table{
+table {
     width: 70%;
 }
 
-th{
-    /* border: 1px solid black !important; */
+th {
+    border: 2px solid #5498c8 !important;
     text-align: center !important;
 }
 
-td{
+td {
     text-align: center !important;
 
 }
 
-.prim-button{
-    background-color: #8B7FDF;
-    border: solid 2.5px #8B7FDF;
+.prim-button {
+    background-color: #5498c8;
+    border: solid 2.5px #5498c8;
     padding: 5px 0px;
     border-radius: 5px;
     color: white;
@@ -28,7 +30,7 @@ td{
     width: 13vw;
 }
 
-.red-button{
+.red-button {
     background-color: #B54949;
     padding: 8px 10px;
     border-radius: 5px;
@@ -36,39 +38,56 @@ td{
     cursor: pointer;
 }
 
-*{
-    font-family: 'Nunito', sans-serif;
-    margin: 0 ;
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
     padding: 0;
 }
 
-table, th{
-    border: 2px solid #7969E8;
+table,
+th {
+    border: 2px solid #5498c8;
     border-collapse: collapse;
     padding: 5px 10px;
     text-align: center !important;
+    background-color: #99d5ff;
 }
 
 td {
     padding-top: 10px;
     padding-bottom: 10px;
-    border-right: 2px solid #8B7FDF
+    border: 2px solid #5498c8;
+    background-color: white;
 }
 
-.isi{
+
+.isi {
     margin-top: 5vw;
-    margin-left: 5vw;
 }
 
-.bayar{
+.bayar {
     width: 100%;
 }
 
-.batal{
+.batal {
     width: 100%;
     margin-top: -20px !important;
 }
 
-.menunggu_konfirmasi{
+.menunggu_konfirmasi {
     width: 100%;
+    border: 2px solid #5498c8;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.padding {
+    border: 2px solid #5498c8;
+}
+
+.padding td {
+    border: 2px solid #5498c8;
 }
