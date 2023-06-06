@@ -1,0 +1,74 @@
+h2{ 
+    font-size:30px; color:#7969E8; margin-bottom: 5vh;
+    font-weight: bolder !important;
+}
+
+table{
+    width: 70%;
+}
+
+th{
+    /* border: 1px solid black !important; */
+    text-align: center !important;
+}
+
+td{
+    text-align: center !important;
+
+}
+
+.prim-button{
+    background-color: #8B7FDF;
+    border: solid 2.5px #8B7FDF;
+    padding: 5px 0px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 2vh;
+    width: 13vw;
+}
+
+.red-button{
+    background-color: #B54949;
+    padding: 8px 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0 ;
+    padding: 0;
+}
+
+table, th{
+    border: 2px solid #7969E8;
+    border-collapse: collapse;
+    padding: 5px 10px;
+    text-align: center !important;
+}
+
+td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-right: 2px solid #8B7FDF
+}
+
+.isi{
+    margin-top: 5vw;
+    margin-left: 5vw;
+}
+
+.bayar{
+    width: 100%;
+}
+
+.batal{
+    width: 100%;
+    margin-top: -20px !important;
+}
+
+.menunggu_konfirmasi{
+    width: 100%;
+}

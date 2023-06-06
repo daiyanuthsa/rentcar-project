@@ -1,0 +1,32 @@
+img{
+    width: 10%;
+}
+
+h2{ font-size:30px; color:#7969E8; margin-bottom: 1vh;
+}
+
+.prim-button{
+    background-color: #8B7FDF;
+    border: solid 2.5px #8B7FDF;
+    padding: 5px 0px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 2vh;
+    width: 6vw;
+}
+
+.isi{
+    margin-left: 5vw;
+    margin-top: 20vh;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0 ;
+    padding: 0;
+}
+
+
+
+

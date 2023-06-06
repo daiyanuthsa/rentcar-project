@@ -1,0 +1,74 @@
+table{
+    width: 50% !important;
+    border-radius: 5px !important;
+
+}
+
+td{
+    border-radius: 5px !important;
+}
+
+.label{
+    padding-right: 2vw;
+    width: 30% !important;
+    border-radius: 5px !important;
+
+}
+
+.inputProfile
+{
+    font-family: 'Nunito', sans-serif;
+    border: 2px solid #7969E8 ;
+    width: 20vw ;
+    height: 5vh  ;
+    box-sizing: border-box ;
+    outline: none ;
+    padding: 10px 10px 10px 10px  ;
+    border-radius: 5px !important;
+
+}
+
+.input{
+    font-family: 'Nunito', sans-serif;
+}
+
+input{
+    font-size: 16px;
+}
+
+input:focus{
+    outline: 0;
+}
+
+.profil{
+    margin-left: 14vw;
+    width: 10vw;
+    cursor: pointer;
+}
+
+h1{
+    color: #7969E8;
+    margin-bottom: 5vh;
+    font-weight: bolder !important;
+}
+
+.masuk_text{
+    top: 9vh;
+}
+
+.ubahProfile{
+    background-color: rgb(204, 204, 204);
+}
+
+
+@media only screen and (max-width: 600px) {
+    table{
+        width: 70% !important;
+    }
+
+    .profil{
+        margin-left: 18vw;
+        width: 10vw;
+        cursor: pointer;
+    }
+  }

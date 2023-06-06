@@ -1,0 +1,89 @@
+
+
+table, th, td{
+    /* border: 2px solid #7969E8; */
+    /* border-collapse: collapse; */
+    /* padding: 5px 10px; */
+    text-align: center !important;
+    /* width: 50% !important; */
+}
+
+
+table{
+    width: 90% !important;
+    margin-left: 5vw;
+
+}
+
+.padding{
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0 ;
+    padding: 0;
+}
+
+.inputM
+{    
+    font-family: 'Nunito', sans-serif;
+    border: 2px solid black ;
+    width: 20vw ;
+    height: 5vh  ;
+    box-sizing: border-box ;
+    border-radius: 6.5px ;
+    outline: none ;
+    padding: 10px 10px 10px 10px  ;
+    margin-bottom: 2vh;
+}
+
+.sec-botton{
+    background-color: white;
+    border: solid 2.5px #7969E8;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #7969E8;
+    cursor: pointer;
+    margin-bottom: 2vh;
+}
+
+.prim-button{
+    background-color: #8B7FDF;
+    border: solid 2.5px #8B7FDF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 2vh;
+}
+
+.red-botton{
+    background-color: #B54949;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.tombol{
+    margin-top: 5vh;
+    margin-left: 5vw;
+    word-spacing: 1vw;
+}
+
+h1,h3{
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    color: #7969E8;
+}
+
+h1{
+    margin-left: 5vw;
+}
+
+
+.edit{
+    margin-left: 5vw;
+}
+

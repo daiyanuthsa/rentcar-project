@@ -1,0 +1,111 @@
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0 ;
+    border: 0 ;
+    padding: 0 ;
+}
+
+.menu{
+    color: black;
+}
+
+.nav{
+    z-index: 999;
+    /* padding-top: 1% !important;
+    padding-left: 4% !important;
+    padding-bottom: 1% !important; */
+    color: #7969E8;
+    border-bottom: 1px solid rgba(24, 24, 24,.40) !important;
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222;
+    top: 0%;
+    position: sticky;
+    background-color: white;
+}
+
+.ungu{
+    color: #A99DFF !important;
+}
+
+.sred{
+    color: #A99DFF;
+}
+
+.brand-logo{
+    padding-left: 3% !important;
+    color: #7969E8 !important;
+    font-size: 2rem !important;
+    font-weight: bolder;
+}
+
+/* .nav-others{
+    display: inline !important;
+    font-size: 1.3em !important;
+    margin-left: 55% !important;
+    word-spacing: 15px;
+} */
+
+/* .nav-others a{
+    text-decoration: none;
+}
+.nav-others a:hover{
+    text-decoration: underline;
+} */
+
+.other_nav{
+    padding-right: 6%;
+}
+
+.keluar{
+    text-decoration: none !important;
+    font-size: 1.2rem !important;
+    background-color:#B54949;
+    color: white !important;
+    /* color: white; */
+    /* padding-top: 5px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding-bottom: 5px !important;
+    border-radius: 5px !important; */
+}
+
+.keluar:hover{
+    background-color: #B54949 !important;
+    opacity: .8 !important;
+}
+
+.a{
+    margin-right: 20px !important;
+    text-decoration: none;
+    color: #7969E8;
+}
+
+.a:hover{
+    text-decoration: underline;
+}
+
+.b{
+    margin-right: 20px !important;
+    text-decoration: none ;
+    color: #7969E8 ;
+}
+
+.b:hover{
+    text-decoration: underline;
+}
+
+.c{
+    text-decoration: none !important;
+    color: #7969E8 !important;
+}
+
+@media only screen and (max-width: 600px) {
+    /* .nav{
+        width: 125% !important;
+    } */
+    .nav-others{
+        /* position: relative; */
+        margin-left: 9% !important;
+    }
+}

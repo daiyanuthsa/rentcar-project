@@ -1,0 +1,96 @@
+table,
+th {
+    border: 2px solid #7969e8;
+    border-collapse: collapse;
+    padding: 5px 10px;
+    text-align: center !important;
+}
+
+td {
+    border-right: 2px solid #8b7fdf;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center !important;
+}
+
+table {
+    width: 70%;
+}
+
+.lihat_foto {
+    /* width: 100% !important; */
+    /* background-color: black !important; */
+    width: 100% !important;
+
+    display: inline-block !important;
+}
+
+.lihat_foto2 {
+    display: inline-block !important;
+    width: 100% !important;
+    /* padding: 6px 33% 5px 33% !important; */
+    margin-bottom: -15px !important;
+}
+
+.batal {
+    width: 100%;
+    /* margin-top: -10px !important; */
+}
+
+.konfirmasi {
+    width: 100%;
+}
+
+.konfirmasi2 {
+    width: 100%;
+    /* padding: 10px !important; */
+    margin-top: 13px;
+}
+
+* {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.prim-button {
+    background-color: #8b7fdf;
+    border: solid 2.5px #8b7fdf;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 1vh;
+}
+
+.red-button {
+    background-color: #b54949;
+    padding: 8px 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.sec-button {
+    background-color: white;
+    border: solid 2.5px #7969e8;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #7969e8;
+    cursor: pointer;
+    margin-bottom: 2vh;
+}
+
+h3 {
+    margin-bottom: 3vh;
+}
+
+.status {
+    margin-left: 5vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .konfirmasi2 {
+        width: 100%;
+    }
+}
