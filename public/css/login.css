@@ -1,19 +1,19 @@
-*{
-    font-family: 'Nunito', sans-serif;
+* {
+    font-family: "Poppins", sans-serif;
     margin: 0 !important;
     border: 0 !important;
     padding: 0 !important;
 }
 
-.image_alun{
-    background-image: url('/image/gambar_alun2_login.png');
+.image_alun {
+    background-image: url("https://images.unsplash.com/photo-1542282088-fe8426682b8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80");
     background-size: cover;
-    background-position-y: 100%;
-    width: 100wh;
+    background-position-y: 50%;
+    width: 800px;
     height: 100vh;
 }
 
-.image_text{
+.image_text {
     color: white;
     text-align: center;
     position: relative;
@@ -21,72 +21,66 @@
     /* font-size: 18px !important; */
 }
 
-.masuk_text{
+.masuk_text {
     position: relative;
     top: 25vh;
     left: 9vh;
 }
 
-.image_text h5{
+.image_text h5 {
     padding-top: 8px !important;
     font-size: 30px !important;
 }
 
-.image_text h3{
+.image_text h3 {
     /* padding-top: 8px !important; */
     font-size: 40px !important;
 }
 
-
-.masuk_text h3{
-    color: #6354C8;
+.masuk_text h3 {
+    color: #5498c8;
     margin-bottom: 25px !important;
     font-weight: bold;
-
 }
 
-.input
-{    
+.input {
     margin-top: 15px !important;
-    font-family: 'Lexend', sans-serif;
-    border: 2px solid #7969E8 !important;
+    border: 2px solid #5498c8 !important;
     width: 20vw !important;
-    height: 40px  !important;
+    height: 40px !important;
     box-sizing: border-box !important;
     border-radius: 6.5px !important;
     outline: none;
     padding: 10px 10px 10px 10px !important;
 }
 
-.tombolsubmit{
+.tombolsubmit {
     margin-top: 15px !important;
-    font-family: 'Lexend', sans-serif;
-    border: 2px solid #7969E8 !important;
+    border: 2px solid #5498c8 !important;
     width: 20vw !important;
-    height: 40px  !important;
+    height: 40px !important;
     box-sizing: border-box !important;
     border-radius: 6.5px !important;
     outline: none;
     padding: 10px 10px 10px 10px !important;
     margin-top: 15px !important;
-    background-color: #8B7FDF;
+    background-color: #5498c8;
     color: white;
-    margin-bottom: 10px!important;
+    margin-bottom: 10px !important;
 }
 
-a{
+a {
     text-decoration: underline;
     color: black;
 }
 
 .swal-overlay {
     background-color: rgba(0, 0, 0, 0.5) !important;
-  }
-
+}
 
 .swal-title {
-    padding-top: 10px!important;
-    padding-bottom: 10px!important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
     color: red;
     margin: 0px !important;
     font-size: 16px !important;
@@ -95,31 +89,29 @@ a{
 }
 
 .swal-button {
-position: relative !important;
-margin-right: 15px !important;
-margin-bottom: 10px !important;
-padding: 7px 19px !important;
-border-radius: 5px !important;
-background-color: #4962B3 !important;
-font-size: 12px !important;
-border: 1px solid #3e549a !important;
-text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3) !important;
+    position: relative !important;
+    margin-right: 15px !important;
+    margin-bottom: 10px !important;
+    padding: 7px 19px !important;
+    border-radius: 5px !important;
+    background-color: #4962b3 !important;
+    font-size: 12px !important;
+    border: 1px solid #3e549a !important;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3) !important;
 }
 
-
 @media only screen and (max-width: 600px) {
-
-    .image_text h5{
+    .image_text h5 {
         padding-top: 6px !important;
         font-size: 20px !important;
     }
-    
-    .image_text h3{
+
+    .image_text h3 {
         /* padding-top: 8px !important; */
         font-size: 30px !important;
     }
 
-    .image_alun{
+    .image_alun {
         background-position-x: 50%;
     }
 }

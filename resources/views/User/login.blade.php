@@ -6,16 +6,21 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="icon" href="{{asset('image/Untitleddd.png')}}">
     <link href="{{asset('css/login.css')}}" rel="stylesheet" type="text/css" />
+  
 </head>
 <body>
 <div class="row">
+<div class="col s6 m6 l6">
+      <div class="image_alun">
+      </div>
+    </div>
     <div class="col s6 m6 l6">
       <div class="masuk_text">
-        <h3>Masuk</h3>
+        <h3>Welcome to Car-Rent</h3>
         <form method="POST" action="{{route('sessStore')}}">
             {{ csrf_field() }}
             <div class="form-group">
@@ -33,14 +38,6 @@
         <p>
           Belum memiliki akun? <a href="{{route('regsCreate')}}">Daftar</a>
         </p>
-      </div>
-    </div>
-    <div class="col s6 m6 l6">
-      <div class="image_alun">
-        <div class="image_text">
-          <h3>Butuh Mobil Di Malang?</h3>
-          <h5>Sewa disini aja!</h5>
-        </div>
       </div>
     </div>
 </div>

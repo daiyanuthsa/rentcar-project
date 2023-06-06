@@ -1,38 +1,68 @@
-*{
+* {
     margin: 0 !important;
     border: 0 !important;
     padding: 0 !important;
 }
 
-.masuk_text{
+.masuk_text {
     position: relative;
     top: 12vh;
     left: 9vh;
 }
+::placeholder {
+    color: black;
+}
+#nama,
+#nik,
+#kota_asal,
+#telepon,
+#password {
+    background-color: white;
+}
+.image_car {
+    background-image: url(https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+    background-size: 100%;
+    height: 100vh;
+    width: 225vh;
+    background-position-y: center;
+}
+a {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+}
+p {
+    color: white;
+    font-weight: bold;
+}
 
-.masuk_text h3{
-    color: #6354C8;
+.masuk_text h3 {
+    color: #5498c8;
     margin-bottom: 30px !important;
     font-weight: bold;
 }
 
-h3{
+h3 {
     font-weight: bold;
+}
+.centered {
+    position: absolute;
+    top: 20%;
+    left: 20%;
 }
 
 @media only screen and (max-width: 600px) {
-
-    .image_text h5{
+    .image_text h5 {
         padding-top: 6px !important;
         font-size: 20px !important;
     }
-    
-    .image_text h3{
+
+    .image_text h3 {
         /* padding-top: 8px !important; */
         font-size: 30px !important;
     }
 
-    .image_alun{
+    .image_car {
         background-position-x: 50%;
     }
 }
