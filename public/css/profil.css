@@ -1,74 +1,95 @@
-table{
+table {
     width: 50% !important;
     border-radius: 5px !important;
 
 }
 
-td{
+td {
     border-radius: 5px !important;
 }
 
-.label{
+.label {
     padding-right: 2vw;
     width: 30% !important;
     border-radius: 5px !important;
 
 }
 
-.inputProfile
-{
-    font-family: 'Nunito', sans-serif;
-    border: 2px solid #7969E8 ;
-    width: 20vw ;
-    height: 5vh  ;
-    box-sizing: border-box ;
-    outline: none ;
-    padding: 10px 10px 10px 10px  ;
+.inputProfile {
+    font-family: 'Poppins';
+    border: 2px solid #5498c8;
+    width: 20vw;
+    height: 5vh;
+    box-sizing: border-box;
+    outline: none;
+    padding: 10px 10px 10px 10px;
     border-radius: 5px !important;
 
 }
 
-.input{
-    font-family: 'Nunito', sans-serif;
+.input {
+    font-family: 'Poppins';
 }
 
-input{
+input {
     font-size: 16px;
 }
 
-input:focus{
+input:focus {
     outline: 0;
 }
 
-.profil{
+.profil {
     margin-left: 14vw;
     width: 10vw;
     cursor: pointer;
 }
 
-h1{
-    color: #7969E8;
+h1 {
+    color: #5498c8;
     margin-bottom: 5vh;
     font-weight: bolder !important;
+    font-family: 'Poppins';
 }
 
-.masuk_text{
+.masuk_text {
     top: 9vh;
 }
 
-.ubahProfile{
-    background-color: rgb(204, 204, 204);
+.ubahProfile {
+    background-color: #f5f6f8;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tombolsubmit {
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid #5498c8;
+    width: 20vw;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 6.5px;
+    outline: none;
+    padding: 10px 10px 10px 10px;
+    margin-top: 15px;
+    background-color: #5498c8;
+    color: white;
+    margin-bottom: 10px;
 }
 
 
 @media only screen and (max-width: 600px) {
-    table{
+    table {
         width: 70% !important;
     }
 
-    .profil{
+    .profil {
         margin-left: 18vw;
         width: 10vw;
         cursor: pointer;
     }
-  }
+}
