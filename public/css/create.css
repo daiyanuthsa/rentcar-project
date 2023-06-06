@@ -1,0 +1,38 @@
+*{
+    margin: 0 !important;
+    border: 0 !important;
+    padding: 0 !important;
+}
+
+.masuk_text{
+    position: relative;
+    top: 12vh;
+    left: 9vh;
+}
+
+.masuk_text h3{
+    color: #6354C8;
+    margin-bottom: 30px !important;
+    font-weight: bold;
+}
+
+h3{
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .image_text h5{
+        padding-top: 6px !important;
+        font-size: 20px !important;
+    }
+    
+    .image_text h3{
+        /* padding-top: 8px !important; */
+        font-size: 30px !important;
+    }
+
+    .image_alun{
+        background-position-x: 50%;
+    }
+}

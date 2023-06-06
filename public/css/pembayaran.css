@@ -1,0 +1,52 @@
+h2{ font-size:30px; color:#7969E8; margin-bottom: 8vh; margin-top: 10vh;
+}
+
+ul{
+    list-style: lower-alpha;
+}
+
+
+.prim-button{
+    background-color: #8B7FDF;
+    border: solid 2.5px #8B7FDF;
+    padding: 5px 17px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+}
+
+input{
+    border: none;
+}
+
+/* CSS input file foto */
+.custom-file-input{
+    margin-top: 20px;
+}
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+    position: absolute;
+    background-color: black;
+  }
+  .custom-file-input::before {
+      margin-right: 10px;
+    content: 'Pilih Foto';
+    display: inline-block;
+    border: 2.5px solid #7969E8;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: 700;
+    color: #7969E8;
+  }
+  .custom-file-input:active::before {
+    /* background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); */
+  }
+  /* sampai disini */
+  
+  .isi{
+    margin-top: 7vh;
+    margin-left: 5vw;
+}
