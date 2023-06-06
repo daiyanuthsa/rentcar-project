@@ -1,0 +1,48 @@
+* {
+    font-family: 'Poppins',sans-serif !important;
+    padding: 0;
+
+}
+
+body {
+    width: 100% !important;
+}
+
+h1 {
+    font-size: 40 !important;
+    font-weight: 600 !important;
+}
+
+h3 {
+    font-size: 12px !important;
+    font-weight: 300 !important;
+}
+
+.menu_utama {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin: 0px 10px;
+    background-color: #5498c8;
+    transition: all 0.5s ease 0s;
+}
+
+.button-color {
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.button:hover {
+    background-color: #4380ac;
+    box-shadow: 3px 3px 12px 0 rgba(0, 0, 0,0.5);
+}
