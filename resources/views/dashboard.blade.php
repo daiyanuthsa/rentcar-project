@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -8,7 +9,9 @@
     <title>Menu Utama</title>
     <link href="{{asset('css/dashboardItems.css')}}" rel="stylesheet" type="text/css" />
     <link rel="icon" href="{{asset('image/Untitleddd.png')}}">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
 	@php
@@ -18,8 +21,8 @@
 
         @if(auth()->check())
             {{-- <p>Hello, {{ auth()->user()->nama }}</p> --}}
-            <h1>Pilih Mobil Kesukaanmu</h1>
-            <div class="item">
+            <h1>Featured Car</h1>
+            <div class="item" data-aos="fade-up">
                 @foreach ($mobil as $mobil)
                 <form action="{{route('formulir')}}" method="GET">
 
@@ -41,7 +44,6 @@
                         <div class='card-car-price'>
                             <p>{{$mobil['harga']}} <span class='price-hari'>/hari</span></p>
                         </div>
-
                     </div>
                 </form>
 
@@ -51,5 +53,9 @@
         @else
             <p>Hello, Stranger</p>
         @endif
+
+        <script>
+            AOS.init();
+       </script>
 </body>
 </html>

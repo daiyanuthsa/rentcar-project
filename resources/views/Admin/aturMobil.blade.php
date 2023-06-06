@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="{{asset('css/aturMobil.css')}}" rel="stylesheet" type="text/css" />
     <link rel="icon" href="{{asset('image/Untitleddd.png')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <title>Mobil</title>
     <title>Atur Mobil</title>
 </head>
@@ -25,9 +26,9 @@
         use \App\Http\Controllers\SessionController;
         echo SessionController::navbar();
     @endphp
-    <h1 style="margin-left:43%;">Mobil</h1>
+    <h1 style="margin-left:5%;"> Data Mobil</h1>
     <table>
-        <tr >
+        <tr>
             <th>ID Mobil</th>
             <th>Nama</th>
             <th>Kapasitas Mesin</th>

@@ -1,19 +1,36 @@
-.inputM
-{    
-    font-family: 'Nunito', sans-serif;
-    border: 2px solid black ;
-    width: 20vw ;
-    height: 5vh  ;
-    box-sizing: border-box ;
-    border-radius: 6.5px ;
-    outline: none ;
-    padding: 10px 10px 10px 10px  ;
+table,
+th {
+    border: 2px solid #5498c8 !important;
+    border-collapse: collapse;
+    padding: 5px 10px;
+    text-align: center !important;
+}
+th {
+    background-color: #99d5ff;
+}
+
+td {
+    border-right: 2px solid #5498c8 !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center !important;
+}
+
+.inputM {
+    font-family: "Nunito", sans-serif;
+    border: 2px solid black;
+    width: 20vw;
+    height: 5vh;
+    box-sizing: border-box;
+    border-radius: 6.5px;
+    outline: none;
+    padding: 10px 10px 10px 10px;
     margin-bottom: 2vh;
 }
 
-.a{
-    background-color: #8B7FDF;
-    border: solid 2.5px #8B7FDF;
+.a {
+    background-color: #5498c8;
+    border: solid 2.5px #5498c8;
     padding: 5px 30px;
     border-radius: 5px;
     color: white;
@@ -21,19 +38,19 @@
     margin-bottom: 2vh;
 }
 
-*{
-    font-family: 'Nunito', sans-serif;
-    margin: 0 ;
+* {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
     padding: 0;
 }
 
-form{
+form {
     margin: 5vw;
 }
 
-.prim-button{
-    background-color: #8B7FDF;
-    border: solid 2.5px #8B7FDF;
+.prim-button {
+    background-color: #5498c8;
+    border: solid 2.5px #5498c8;
     padding: 5px 20px;
     border-radius: 5px;
     color: white;
@@ -41,15 +58,19 @@ form{
     margin-bottom: 2vh;
 }
 
-h2{
-    margin-top: 10vh; font-size:30px; color:#7969E8; margin-bottom: 5vh;
+h2 {
+    font-weight: bold !important;
+    margin-top: 10vh;
+    font-size: 30px;
+    color: #5498c8;
+    margin-bottom: 5vh;
 }
 
 @media only screen and (max-width: 600px) {
     /* .nav{
         width: 125% !important;
     } */
-    .inputM{
-        width: 32vw ;
+    .inputM {
+        width: 32vw;
     }
 }

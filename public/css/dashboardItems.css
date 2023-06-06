@@ -1,25 +1,22 @@
-h1{
+h1 {
     position: relative;
-    color: #6354C8;
+    color: #5498c8;
     top: 4vh;
     font-size: 3rem;
-    /* display: inline; */
-    /* left: 29%; */
-    text-align: center;
-    /* margin-bottom: 10vh !important; */
+    text-align: left;
+    padding-left: 140px;
     font-weight: bolder !important;
 }
 
-.item{
+.item {
     width: 85%;
     margin-top: 20px !important;
     margin-left: 15px !important;
-    /* overflow-y: auto; */
 }
-.cards{
+.cards {
     position: relative;
-    width: 230px !important;
-    height: 300px !important;
+    width: 500px !important;
+    height: 250px !important;
     top: 10vh;
     background-color: black;
     border-radius: 10px;
@@ -29,120 +26,115 @@ h1{
     margin-bottom: 20px;
 }
 
-.card:hover{
+.card:hover {
     cursor: pointer;
-    opacity: .9;
+    opacity: 0.9;
 }
 
-.cards img{
+.cards img {
     position: relative;
-    height: 300px ;
-    width: 230px;
+    height: 250px;
+    width: 500px;
     object-fit: cover;
     border-radius: 10px;
     display: block;
-    object-position:9%;
-    opacity: .6;
+    object-position: 9%;
+    opacity: 0.6;
 }
 
-
-.card-title{
+.card-title {
     position: absolute;
     top: 3vh;
     left: 1.3vw;
     color: white;
 }
 
-.card-car-name{
+.card-car-name {
     position: absolute;
-    top: 70%;
+    top: 73%;
     left: 1.3vw;
     font-size: 1.5rem;
     color: white;
 }
 
-.card-car-price{
+.card-car-price {
     position: absolute;
     top: 83%;
     left: 1.3vw;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
 }
 
-.card-car-cc{
+.card-car-cc {
     position: absolute;
-    top: 78%;
-    left: 76%;
+    top: 3vh;
+    left: 85%;
     color: white;
-    font-size: .8rem;
+    font-size: medium;
 }
 
-.price-hari{
-    font-size: .9rem;
+.price-hari {
+    font-size: 0.9rem;
 }
 
-.card p:nth-child(2){
+.card p:nth-child(2) {
     margin-top: -10px !important;
     font-weight: bolder;
 }
 
-.kartuMobil{
-    width: 230px !important;
-    height: 300px !important;
+.kartuMobil {
+    width: 500px !important;
+    height: 250px !important;
     position: absolute;
     top: 0;
     z-index: 2;
     opacity: 0%;
-    /* background-color: red !important; */
 }
 
-.kartuMobil:hover{
+.kartuMobil:hover {
     cursor: pointer;
-    opacity: .3;
+    opacity: 0.3;
     background-color: black;
 }
 
-
-.gambarr{
+.gambarr {
     position: absolute;
     left: 0;
-    /* z-index: 3; */
 }
 
 @media only screen and (max-width: 600px) {
-    h1{
+    h1 {
         font-size: 2.5rem;
     }
-    .item{
+    .item {
         width: 80%;
         margin-top: 15px !important;
         margin-left: 20% !important;
-        /* overflow-y: auto; */
     }
 }
 
 @media only screen and (max-width: 1280px) {
-    .card-car-name{
+    .card-car-name {
         position: absolute;
         top: 70%;
         left: 1.3vw;
         font-size: 1.5rem;
         color: white;
     }
-    
-    .card-car-price{
+
+    .card-car-price {
         position: absolute;
         top: 83%;
         left: 1.3vw;
         font-size: 1.5rem;
         color: white;
     }
-    
-    .card-car-cc{
+
+    .card-car-cc {
         position: absolute;
         top: 78%;
         left: 76%;
         color: white;
-        font-size: .8rem;
+        font-size: 0.8rem;
     }
 }
