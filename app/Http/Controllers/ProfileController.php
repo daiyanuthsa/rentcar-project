@@ -10,7 +10,7 @@ class ProfileController extends Controller
 {
     public static function admincheck(): bool
     {
-        if (auth()->user()->telepon == '081285942400' || auth()->user()->telepon == '085215168475' || auth()->user()->telepon == "081310887676") {
+        if (auth()->user()->telepon == '0822' || auth()->user()->telepon == '085215168475' || auth()->user()->telepon == "081310887676") {
             return true;
         } else {
             return false;
