@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="{{asset('css/formulir.css')}}" rel="stylesheet" type="text/css" />
     <link rel="icon" href="{{asset('image/Untitleddd.png')}}">
-    <title>Formuir Penyewaan</title>
+    <title>Formulir Penyewaan</title>
 </head>
 <body>
 @php
@@ -15,18 +15,29 @@
         echo SessionController::navbar();
     @endphp
 
-
-
     <form action="{{route('formulirPost')}}" method="POST">
         @csrf
         <h2>Detail Penyewaan</h2>
-        <p style="margin-bottom:15px;">Mobil : {{$mobil->nama}}</p>
+        <table>
+            <tr>
+                <th>Jenis Mobil</th>
+                <th>Tanggal Pengambilan</th>
+                <th>Tanggal Pengembalian</th>
+            </tr>
+            <tr>
+                <td>{{$mobil->nama}}</td>
+                <td><input class="inputM browser-default" type="date" placeholder="Tanggal Pengambilan" name="pengambilan" id="date_ambil" oninput="tempCel(this.value)" onclick=""></td>
+                <td><input class="inputM browser-default" type="date" placeholder="Tanggal Pengembalian" name="pengembalian" id="date_ngembaliin" oninput="tempCel2(this.value)"></td>
+            </tr>
+        </table>
+
+        {{-- <p style="margin-bottom:15px;">Mobil : {{$mobil->nama}}</p>
         <input type="number" name="id" value="{{$mobil->id}}" style="display: none">
         <input class="inputM browser-default" type="date" placeholder="Tanggal Pengambilan" name="pengambilan" id="date_ambil" oninput="tempCel(this.value)" onclick="">
         <br>
-        <input class="inputM browser-default" type="date" placeholder="Tanggal Pengembalian" name="pengembalian" id="date_ngembaliin"oninput="tempCel2(this.value)">
+        <input class="inputM browser-default" type="date" placeholder="Tanggal Pengembalian" name="pengembalian" id="date_ngembaliin"oninput="tempCel2(this.value)"> --}}
 
-        <p style="font-size: 11px; font-weight:bold; margin-bottom:30px;margin-top:5px;">*Tanggal Peminjaman dan Pengembalian <br>ditulis dengan format dd/mm/yyyy</p>
+        <p style="font-size: 11px; font-weight:bold; margin-bottom:30px;margin-top:5px;">*Tanggal Peminjaman dan Pengembalian <br>ditulis dengan format mm/dd/yyyy</p>
 
         <p style="margin-bottom:15px ;">Harga Penyewaan :  Rp. <span id="harga_mobil">{{$mobil->harga}}</span> x <span id="tes" name="tes">NaN</span> hari = Rp . <span id="hasil_akhir">NaN</span> </p>
         <button type="submit" class="prim-button">Kirim</button>
