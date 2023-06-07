@@ -11,7 +11,7 @@
 
 .nav {
     z-index: 999;
-    color: #7969e8;
+    color: #5498c8;
     -webkit-box-shadow: 0 4px 6px -6px #222;
     -moz-box-shadow: 0 4px 6px -6px #222;
     box-shadow: 0 4px 6px -6px #222;
@@ -21,7 +21,7 @@
 }
 
 .ungu {
-    color: #7969e8 !important;
+    color: #5498c8 !important;
 }
 a {
     text-decoration: none !important;
@@ -61,7 +61,7 @@ a {
 .a {
     margin-right: 20px !important;
     text-decoration: none;
-    color: #7969e8;
+    color: #5498c8;
 }
 
 .a:hover {
@@ -71,7 +71,7 @@ a {
 .b {
     margin-right: 20px !important;
     text-decoration: none;
-    color: #7969e8;
+    color: #5498c8;
 }
 
 .b:hover {
@@ -80,7 +80,7 @@ a {
 
 .c {
     text-decoration: none !important;
-    color: #7969e8 !important;
+    color: #5498c8 !important;
 }
 
 @media only screen and (max-width: 600px) {
