@@ -47,60 +47,38 @@ class TransactionController extends Controller
         return view('Penyewaan.formulir',['mobil'=>$cars]);
     }
     public function formstore(Request $request)
-{
-    $iduser = auth()->id();
-    $idcar = $request->get('id');
-    $datenow = date('Y-m-d H:i:s', strtotime($request->get('pengambilan')));
-    $datelater = date('Y-m-d H:i:s', strtotime($request->get('pengembalian')));
-    $harga = DB::table('cars')->where('id', '=', $idcar)->pluck('harga');
+    {
+        $iduser = auth()->id();
+        $idcar = $request->get('id');
+        $datenow = date('Y-m-d H:i:s', strtotime($request->get('pengambilan')));
+        $datelater = date('Y-m-d H:i:s', strtotime($request->get('pengembalian')));
+        $harga = DB::table('cars')->where('id', '=', $idcar)->pluck('harga');
 
-    if (count($harga) > 0) {
-        $harga = $harga[0];
-    } else {
-        // Handle the case when $harga array is empty
-        // You can set a default value or return an error message
-        // Example:
-        // return back()->with('error', 'Invalid car ID');
+        if (count($harga) > 0) {
+            $harga = $harga[0];
+        } else {
+            // Handle the case when $harga array is empty
+            // You can set a default value or return an error message
+            // Example:
+            // return back()->with('error', 'Invalid car ID');
+            return redirect()->to(route('userCreateHist'));
+        }
+
+        $date1 = strtotime($datenow);
+        $date2 = strtotime($datelater);
+        $hari = abs($date2 - $date1) / 86400;
+        $harga = $hari * $harga;
+
+        DB::table('cars_users')->insert([
+            'peminjaman' => $datenow,
+            'pengembalian' => $datelater,
+            'harga' => $harga,
+            'car_id' => $idcar,
+            'user_id' => $iduser,
+            'created_at' => $datenow,
+            'updated_at' => $datenow
+        ]);
+
         return redirect()->to(route('userCreateHist'));
     }
-
-    $date1 = strtotime($datenow);
-    $date2 = strtotime($datelater);
-    $hari = abs($date2 - $date1) / 86400;
-    $harga = $hari * $harga;
-
-    DB::table('cars_users')->insert([
-        'peminjaman' => $datenow,
-        'pengembalian' => $datelater,
-        'harga' => $harga,
-        'car_id' => $idcar,
-        'user_id' => $iduser,
-        'created_at' => $datenow,
-        'updated_at' => $datenow
-    ]);
-
-    return redirect()->to(route('userCreateHist'));
-}
-
-    // public function formstore(Request $request){
-    //     $iduser=auth()->id();
-    //     $idcar=$request->get('id');
-    //     $datenow=date('Y-m-d H:i:s',strtotime($request->get('pengambilan')));
-    //     $datelater=date('Y-m-d H:i:s',strtotime($request->get('pengembalian')));
-    //     $harga=DB::table('cars')->where('id','=',$idcar)->pluck('harga');
-    //     $date1=strtotime($datenow);
-    //     $date2=strtotime($datelater);
-    //     $hari=abs($date2-$date1)/86400;
-    //     $harga=$hari*$harga[0];
-    //     DB::table('cars_users')->insert([
-    //         'peminjaman'=>$datenow,
-    //         'pengembalian'=>$datelater,
-    //         'harga'=>$harga,
-    //         'car_id'=>$idcar,
-    //         'user_id'=>$iduser,
-    //         'created_at'=>$datenow,
-    //         'updated_at'=>$datenow
-    //     ]);
-    //     return redirect()->to(route('userCreateHist'));
-    // }
 }

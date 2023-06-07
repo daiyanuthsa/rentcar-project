@@ -25,9 +25,17 @@
                 <th>Tanggal Pengembalian</th>
             </tr>
             <tr>
-                <td>{{$mobil->nama}}</td>
-                <td><input class="inputM browser-default" type="date" placeholder="Tanggal Pengambilan" name="pengambilan" id="date_ambil" oninput="tempCel(this.value)" onclick=""></td>
-                <td><input class="inputM browser-default" type="date" placeholder="Tanggal Pengembalian" name="pengembalian" id="date_ngembaliin" oninput="tempCel2(this.value)"></td>
+                <tr>
+                    <td>{{$mobil->nama}}</td>
+                    <td>
+                        <input class="inputM browser-default" type="date" placeholder="Tanggal Pengambilan" name="pengambilan" id="date_ambil" oninput="tempCel(this.value)" onclick="">
+                    </td>
+                    <td>
+                        <input class="inputM browser-default" type="date" placeholder="Tanggal Pengembalian" name="pengembalian" id="date_ngembaliin" oninput="tempCel2(this.value)">
+                    </td>
+                    <input type="number" name="id" value="{{$mobil->id}}" style="display: none">
+                </tr>
+
             </tr>
         </table>
 
