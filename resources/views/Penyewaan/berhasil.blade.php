@@ -18,7 +18,7 @@
     <div class="isi">
         <img src="{{asset('image/check_circle_outline-24px 2.png')}}" alt="">
         <h2>Pembayaran Berhasil</h2>
-        <p style="margin-bottom: 5vh;">Dalam waktu 20 menit Anda akan dihubungi melalui nomor telfon. <br>Jika ada permasalahan, Anda dapat menghubungi <b>+62851525334</b>.</p>
+        <p style="margin-bottom: 5vh;">Mohon ditunggu 1 x 24 Jam untuk dihubungi melalui nomor telepon. <br>Jika terdapat kendala, Anda dapat menghubungi <b>+62855555</b>.</p>
 
         <a href="{{route('userCreateHist')}}">
             <button class="prim-button">Oke</button>

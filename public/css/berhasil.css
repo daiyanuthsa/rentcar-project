@@ -1,13 +1,16 @@
-img{
+img {
     width: 10%;
 }
 
-h2{ font-size:30px; color:#7969E8; margin-bottom: 1vh;
+h2 {
+    font-size: 30px;
+    color: #5498c8;
+    margin-bottom: 1vh;
 }
 
-.prim-button{
-    background-color: #8B7FDF;
-    border: solid 2.5px #8B7FDF;
+.prim-button {
+    background-color: #5498c8;
+    border: solid 2.5px #5498c8;
     padding: 5px 0px;
     border-radius: 5px;
     color: white;
@@ -16,17 +19,14 @@ h2{ font-size:30px; color:#7969E8; margin-bottom: 1vh;
     width: 6vw;
 }
 
-.isi{
+.isi {
     margin-left: 5vw;
     margin-top: 20vh;
+    text-align: center;
 }
 
-*{
-    font-family: 'Nunito', sans-serif;
-    margin: 0 ;
+* {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
     padding: 0;
 }
-
-
-
-

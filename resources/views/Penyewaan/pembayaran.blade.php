@@ -20,13 +20,12 @@
         <h2>Pembayaran</h2>
         <p>Transfer pada nomor rekening berikut : <br>
         <br>
-        BNI - 124141214 a.n MIFTAHUL IHSAN <br>
-        BRI - 315142352 a.n GABRIELLE EVAN FARREL <br>
-        Mandiri - 152334646 a.n AlRAVIE MUTIAR MAHESA</p>
+        BCA - 5555555 a.n Stefanus Daiyan Kurniawan <br>
+        </p>
         <br>
         <p><b>Tata cara pembayaran</b> <br></p><br>
 
-        <ol style=" margin-left:1vw; ">
+        <ol style=" margin:auto; ">
             <li>Transfer sesuai rekening bank yang tertera</li>
             <li>Upload bukti pembayaran pada halaman ini</li>
             <li>Pembayaran selesai</li>
