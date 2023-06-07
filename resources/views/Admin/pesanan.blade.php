@@ -84,7 +84,7 @@
                             <td rowspan="8" style="text-align: center;">Tidak Ada Data</td>
                         </tr> --}}
                     @endif
-                    
+
                 @endforeach
             </table>
 
